@@ -1,0 +1,55 @@
+{
+  "name": "ute-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@trendmicro/react-sidenav": "^0.4.5",
+    "axios": "^0.18.0",
+    "cypress": "^3.3.0",
+    "cypress-file-upload": "^3.1.2",
+    "firebase": "^6.0.2",
+    "jquery": "^3.4.1",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-firebase-file-uploader": "^2.4.2",
+    "react-redux": "^7.0.3",
+    "react-responsive-modal": "^4.0.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "redux-form": "^8.2.0"
+  },
+  "scripts": {
+    "start": "sh -ac '. `pwd`/.env.${REACT_APP_ENV}; react-scripts start'",
+    "start:dev": "REACT_APP_ENV=development yarn start",
+    "start:production": "REACT_APP_ENV=production yarn start",
+    "build": "sh -ac '. `pwd`/.env.${REACT_APP_ENV}; GENERATE_SOURCEMAP=false; react-scripts build'",
+    "build:dev": "REACT_APP_ENV=development yarn build",
+    "build:production": "REACT_APP_ENV=production yarn build",
+    "build:test": "REACT_APP_ENV=test yarn build",
+    "test": "sh -ac '. `pwd`/.env.${REACT_APP_ENV}; GENERATE_SOURCEMAP=false; react-scripts build'",
+    "test:dev": "REACT_APP_ENV=test yarn start",
+    "test:production": "REACT_APP_ENV=production yarn build",
+    "eject": "react-scripts eject",
+    "cy": "node_modules/.bin/cypress open"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
